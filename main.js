@@ -32,7 +32,7 @@ function playRound(playerSelection, computerSelection){
 function game(){
     let pwin = 0, cwin = 0, tie = 0; 
     for (let i = 0; i < 5; i++){
-        const [result, winner] = playRound(prompt('Enter your move: '), computerPlay()); 
+        const [result, winner] = playRound(prompt('Enter your move[rock, paper, scissors]: '), computerPlay()); 
         if (winner == 'p'){
             pwin += 1; 
         } else if (winner == 'c') {
